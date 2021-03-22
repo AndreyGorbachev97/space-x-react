@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  min-height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(21, 10, 1, 0.21);
+  border-bottom: 1px solid rgba(152, 147, 147, 0.21);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 100px;
+}
+
+.nav {
+  font-size: 16px;
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 300';
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 42px;
+  padding: 5px 0;
+  position: relative;
+
+  color: #fff;
+  text-decoration: none;
+
+  transition: color 0.2s linear;
+}
+
+.nav__link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #b1b1b1;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  transition: opacity 0.2s linear;
+}
+
+.nav__link:hover {
+  color: #b1b1b1;
+}
+
+.nav__link:hover:after {
+  opacity: 1;
+}

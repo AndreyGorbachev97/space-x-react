@@ -1,0 +1,89 @@
+@import url("./fonts.css");
+@import url("./header.css");
+@import url("./intro.css");
+@import url("./mainButton.css");
+@import url("./benefit.css");
+@import url("./hamburger.css");
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+@media (max-width:900px) {
+  .header__logo{
+    display:none;
+  }
+  .nav {
+    display:none;
+  }
+  .btn__line {
+    display: none;
+  }
+  .intro__flex {
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  .intro__titles {
+    margin-top: 35;
+    margin-bottom: 30px;
+  }
+  .intro__titles__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro__title {
+    font-size: 50px;
+  }
+  .intro__subtitle {
+    font-size: 25px;
+  }
+  .intro__btn__suptitle {
+    color: white;
+  }
+}
+
+@media (max-width:450px) {
+  .intro__title {
+    font-size: 40px;
+  }
+  .intro__subtitle {
+    font-size: 20px;
+  }
+  .intro__btns {
+    width: 350px;
+  }
+  .intro__btn__suptitle {
+    font-size: 12px;
+  }
+  .intro__btn__title {
+    font-size: 45px;
+  }
+  .intro__btn__subtitle {
+    font-size: 13px;
+  }
+}
+
+@media (min-width:900px) {
+  .menu__toggle{
+    display:none;
+  }
+}

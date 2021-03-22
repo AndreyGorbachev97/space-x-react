@@ -1,0 +1,77 @@
+.btn {
+  width: 180px;
+  border: none;
+  color: #fff;
+  position: relative;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 100';
+  cursor: pointer;
+  outline: none;
+  transition: background .2s linear;
+}
+
+.btn-border-hor:after, .btn-border-hor:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
+.btn-border-hor:after {
+  left: 0;
+  background-image: linear-gradient(to bottom, #0c151e 0%, #3b83df calc(100% - 6px), white 6px);
+}
+.btn-border-hor:before {
+  right: 0;
+  background-image: linear-gradient(to bottom, white 6px, #3b83df 0%, #0c151e 100%);
+}
+
+.btn-border-ver:after, .btn-border-ver:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+.btn-border-ver:after {
+  top: 0;
+  background-image: linear-gradient(to left, white 6px, #3b83df 0%, #0c151e 100%);
+}
+.btn-border-ver:before {
+  bottom: 0;
+  background-image: linear-gradient(to left, #0c151e 0%, #3b83df calc(100% - 6px), white 6px);
+}
+
+.btn-flare:before, .btn-flare:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  filter: blur(4px);
+}
+.btn-flare:before {
+  bottom: -2px;
+  left: -2px;
+}
+.btn-flare:after {
+  top: 0;
+  right: 0;
+}
+
+.btn:hover {
+  background-color: rgba(1, 133, 185, 0.1);
+}
+
+.btn:active {
+  background-color: rgba(1, 133, 185, 0.2);
+}
+
+.btn__line {
+  position: relative;
+  left: 200px;
+  bottom: 30px;
+  padding-top: 15px;
+}

@@ -1,0 +1,36 @@
+.intro__btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  color: white;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.intro__btn__suptitle {
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 100';
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.intro__btn__title {
+  line-height: 1;
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 700';
+  font-size: 60px;
+}
+
+.intro__btn__subtitle {
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 100';
+  font-size: 17px;
+}
+
+.small__letter {
+  font-size: 20px;
+}
